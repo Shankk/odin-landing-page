@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header, .main {
@@ -17,7 +18,9 @@ body {
     font-size: 24px;
     color: #F9FAF8;
     font-weight: bold;
-    flex: 1 1 90%;
+    min-width: 200px;
+    flex: 1 0 90%;
+    margin-right: 64px;
 }
 a {
     text-decoration: none;
@@ -33,22 +36,24 @@ a {
 }
 
 .main >.container {
-    width: 300px;
+    max-width: 600px;
+    min-width: 300px;
     height: 300px;
     display: flex;
     flex-direction: column;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     gap: 8px;
 }
 
 .main >.imgContainer {
     background-color: grey;
-    width: 300px;
+    max-width: 600px;
+    min-width: 300px;
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
 }
 
 .main >.container >.title {
@@ -89,7 +94,7 @@ a {
 .quote >.container {
     max-width: 800px;
     height: 300px;
-    margin: 100px 0px;
+    margin: 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,8 +124,10 @@ a {
 .product >.container {
     background-color: #3882f6;
     width: 800px;
-    height: 150px;
+    height: 100px;
     border-radius: 8px;
+    padding: 25px;
+    gap: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,7 +137,8 @@ a {
     color: #E5E7EB;
     font-size: 20px;
     font-weight: bold;
-    margin: auto;
+    
+    
 }
 
 .footer {
